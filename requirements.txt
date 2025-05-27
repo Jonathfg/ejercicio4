@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+httpx
+pandas
+geopy
+jinja2
+xhtml2pdf
+python-dotenv
+openpyxl
+xlsxwriter

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid #333; padding: 4px; text-align: center; }
+    th { background: #f0f0f0; }
+  </style>
+</head>
+<body>
+  <h2>Reporte Meteorológico</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Hora</th>
+        <th>Temperatura (°C)</th>
+        <th>Humedad (%)</th>
+        <th>Lluvia (mm)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in records %}
+      <tr>
+        <td>{{ r.time }}</td>
+        <td>{{ r.temperature }}</td>
+        <td>{{ r.humidity }}</td>
+        <td>{{ r.rain }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
